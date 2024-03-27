@@ -1,7 +1,7 @@
 """Tests for the fibonacci() function."""
 import pytest
 
-from APP_NAME import algorithms
+from eeg_analysis_module import algorithms
 
 
 def test_fibonacci_success_0() -> None:

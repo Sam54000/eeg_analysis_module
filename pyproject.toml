@@ -1,14 +1,21 @@
 [tool.poetry]
-name = "app-name"
+name = "eeg_analysis_module"
 version = "0.1.0"
-description = "A beautiful description."
-authors = ["Reinder Vos de Wael <reinder.vosdewael@childmind.org>"]
+description = "Useful functions for eeg analysis in the specific case of Attention Network Task with EGI eeg cap"
+authors = ["Samuel Louviot <sam.louviot@gmail.com>"]
 license = "LGPL-2.1"
 readme = "README.md"
-packages = [{include = "APP_NAME", from = "src"}]
+packages = [{include = "eeg_analysis_module", from = "src"}]
 
 [tool.poetry.dependencies]
-python = "~3.11"
+python = ">=3.11 <4.0"
+simple-term-menu = "^1.6.4"
+numpy = "^1.26.4"
+pandas = "^2.2.1"
+pybids = "^0.16.4"
+pyprep = "^0.4.3"
+matplotlib = "^3.8.3"
+pytz = "^2024.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0.2"
